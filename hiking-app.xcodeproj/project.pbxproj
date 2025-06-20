@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A869B7F2E05FF5000A2B290 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1A869B7E2E05FF5000A2B290 /* Apollo */; };
+		1A869B812E05FF5000A2B290 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1A869B802E05FF5000A2B290 /* ApolloAPI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1A869B432E02EA2000A2B290 /* hiking-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hiking-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A869B812E05FF5000A2B290 /* ApolloAPI in Frameworks */,
+				1A869B7F2E05FF5000A2B290 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = "hiking-app";
 			packageProductDependencies = (
+				1A869B7E2E05FF5000A2B290 /* Apollo */,
+				1A869B802E05FF5000A2B290 /* ApolloAPI */,
 			);
 			productName = "hiking-app";
 			productReference = 1A869B432E02EA2000A2B290 /* hiking-app.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 1A869B3A2E02EA2000A2B290;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A869B7D2E05FF5000A2B290 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A869B442E02EA2000A2B290 /* Products */;
 			projectDirPath = "";
@@ -322,6 +334,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A869B7D2E05FF5000A2B290 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.22.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A869B7E2E05FF5000A2B290 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A869B7D2E05FF5000A2B290 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		1A869B802E05FF5000A2B290 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A869B7D2E05FF5000A2B290 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A869B3B2E02EA2000A2B290 /* Project object */;
 }

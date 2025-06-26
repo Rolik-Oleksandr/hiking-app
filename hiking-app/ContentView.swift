@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  hiking-app
-//
-//  Created by Oleksandr Rolik on 18.06.2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {

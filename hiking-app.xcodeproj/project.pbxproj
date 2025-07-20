@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A1E174A2E2BB6D700E796B3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1E17492E2BB6D700E796B3 /* FirebaseAuth */; };
 		1A1E174C2E2BB6D700E796B3 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1E174B2E2BB6D700E796B3 /* FirebaseCore */; };
+		1A77C6B12E2D158B00EB7DBF /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 1A77C6B02E2D158B00EB7DBF /* MapboxMaps */; };
 		1AE521DE2E2BB82C00A791C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1AE521D72E2BB82C00A791C8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -17,9 +18,22 @@
 		1AE521D72E2BB82C00A791C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1AE521E12E2D13B200A791C8 /* Exceptions for "hiking-app" folder in "hiking-app" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1A1E17362E2BB5D700E796B3 /* hiking-app */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1A1E17392E2BB5D700E796B3 /* hiking-app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1AE521E12E2D13B200A791C8 /* Exceptions for "hiking-app" folder in "hiking-app" target */,
+			);
 			path = "hiking-app";
 			sourceTree = "<group>";
 		};
@@ -30,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A77C6B12E2D158B00EB7DBF /* MapboxMaps in Frameworks */,
 				1A1E174C2E2BB6D700E796B3 /* FirebaseCore in Frameworks */,
 				1A1E174A2E2BB6D700E796B3 /* FirebaseAuth in Frameworks */,
 			);
@@ -77,6 +92,7 @@
 			packageProductDependencies = (
 				1A1E17492E2BB6D700E796B3 /* FirebaseAuth */,
 				1A1E174B2E2BB6D700E796B3 /* FirebaseCore */,
+				1A77C6B02E2D158B00EB7DBF /* MapboxMaps */,
 			);
 			productName = "hiking-app";
 			productReference = 1A1E17372E2BB5D700E796B3 /* hiking-app.app */;
@@ -108,6 +124,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				1A1E17482E2BB6D700E796B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1A77C6AF2E2D158B00EB7DBF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A1E17382E2BB5D700E796B3 /* Products */;
@@ -270,6 +287,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hiking-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hiking-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hiking-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hiking-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +367,14 @@
 				minimumVersion = 12.0.0;
 			};
 		};
+		1A77C6AF2E2D158B00EB7DBF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -360,6 +387,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1A1E17482E2BB6D700E796B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
+		};
+		1A77C6B02E2D158B00EB7DBF /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A77C6AF2E2D158B00EB7DBF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

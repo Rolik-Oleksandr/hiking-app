@@ -1,0 +1,29 @@
+#gitignore
+
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+*.xcuserstate
+
+# Xcode scheme management
+xcshareddata/
+xcshareddata/xcschemes/*
+!xcshareddata/xcschemes/MyScheme.xcscheme
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# Firebase
+GoogleService-Info.plist

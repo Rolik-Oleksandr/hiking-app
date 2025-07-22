@@ -4,7 +4,8 @@ import SwiftUI
 struct hiking_appApp: App {
     var body: some Scene {
         WindowGroup {
-            MapView()
+//            MapView()
+            UserLocationMapView()
         }
     }
 }

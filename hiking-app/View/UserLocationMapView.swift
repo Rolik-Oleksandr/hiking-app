@@ -10,6 +10,7 @@ struct UserLocationMapView: View {
             Map(initialViewport: .camera(center: center, zoom: 4, bearing: 0, pitch:0)) {
                 Puck2D(bearing: .heading)
             }
+            .mapStyle(.outdoors)
             .ignoresSafeArea(edges: .all)
             .onAppear {
                 proxy.location?.override(

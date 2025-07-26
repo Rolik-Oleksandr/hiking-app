@@ -1,6 +1,7 @@
 import Foundation
+import SwiftUI
 
-enum TabModel: String, CaseIterable {
+enum TabModel: String, Hashable, CaseIterable {
     case home = "home"
     case map = "map"
     case profile = "profile"

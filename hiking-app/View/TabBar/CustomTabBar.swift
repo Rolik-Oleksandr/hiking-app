@@ -49,12 +49,13 @@ struct CustomTabBar: View {
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(isCurrent ? Color.white : Color.gray)
                     }
+                    .padding(.bottom, 20)
                     .buttonStyle(.plain)
                 }
             }
         }
-        .frame(maxHeight : 80.0)
-        .background(Color.red)
+        .offset(y: 40)
+        .frame(maxHeight : 100.0)
     }
 }
 

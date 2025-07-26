@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct CustomTabBar: View {
-    @Binding var tabSelection: Int
-    
+    @Binding var tabSelection: TabModel
+
     var body: some View {
         let iconHeight: CGFloat = 60.0
         
@@ -11,15 +11,14 @@ struct CustomTabBar: View {
                 .foregroundStyle(.black)
             
             HStack(spacing: 0.0) {
-                ForEach(0..<TabModel.allCases.count, id: \.self) { index in
-                    let tab = TabModel.allCases[index]
-                    let isCurrent = tabSelection == index + 1
-                    
+                ForEach(TabModel.allCases, id: \.self) { tab in
+                    let isCurrent = tabSelection == tab
+
                     Button {
                         withAnimation(.spring(response: 0.6,
                                               dampingFraction: 0.7,
                                               blendDuration: 0.7)) {
-                            tabSelection = index + 1
+                            tabSelection = tab
                         }
                     } label: {
                         VStack(spacing: 2.0) {
@@ -50,12 +49,13 @@ struct CustomTabBar: View {
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(isCurrent ? Color.white : Color.gray)
                     }
+                    .padding(.bottom, 20)
                     .buttonStyle(.plain)
                 }
             }
         }
-        .frame(maxHeight : 80.0)
-        .background(Color.red)
+        .offset(y: 40)
+        .frame(maxHeight : 100.0)
     }
 }
 

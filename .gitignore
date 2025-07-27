@@ -5,6 +5,7 @@
 
 # Xcode
 build/
+*.env
 DerivedData/
 *.pbxuser
 !default.pbxuser

@@ -13,6 +13,8 @@ struct hiking_appApp: App {
                     MapView()
                         .tag(TabModel.map)
                     UserLocationMapView()
+                        .tag(TabModel.route)
+                    UserProfileView()
                         .tag(TabModel.profile)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))

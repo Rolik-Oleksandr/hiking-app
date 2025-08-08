@@ -10,6 +10,7 @@
 		1A1E174A2E2BB6D700E796B3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1E17492E2BB6D700E796B3 /* FirebaseAuth */; };
 		1A1E174C2E2BB6D700E796B3 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1E174B2E2BB6D700E796B3 /* FirebaseCore */; };
 		1A77C6B12E2D158B00EB7DBF /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 1A77C6B02E2D158B00EB7DBF /* MapboxMaps */; };
+		1ACC6E352E463D49006D5AFB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACC6E342E463D49006D5AFB /* Kingfisher */; };
 		1AD5932F2E36474F00AC2292 /* keys.env in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5932E2E36474500AC2292 /* keys.env */; };
 		1AE521DE2E2BB82C00A791C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1AE521D72E2BB82C00A791C8 /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACC6E352E463D49006D5AFB /* Kingfisher in Frameworks */,
 				1A77C6B12E2D158B00EB7DBF /* MapboxMaps in Frameworks */,
 				1A1E174C2E2BB6D700E796B3 /* FirebaseCore in Frameworks */,
 				1A1E174A2E2BB6D700E796B3 /* FirebaseAuth in Frameworks */,
@@ -96,6 +98,7 @@
 				1A1E17492E2BB6D700E796B3 /* FirebaseAuth */,
 				1A1E174B2E2BB6D700E796B3 /* FirebaseCore */,
 				1A77C6B02E2D158B00EB7DBF /* MapboxMaps */,
+				1ACC6E342E463D49006D5AFB /* Kingfisher */,
 			);
 			productName = "hiking-app";
 			productReference = 1A1E17372E2BB5D700E796B3 /* hiking-app.app */;
@@ -128,6 +131,7 @@
 			packageReferences = (
 				1A1E17482E2BB6D700E796B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1A77C6AF2E2D158B00EB7DBF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				1ACC6E332E463D49006D5AFB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A1E17382E2BB5D700E796B3 /* Products */;
@@ -381,6 +385,14 @@
 				minimumVersion = 11.0.0;
 			};
 		};
+		1ACC6E332E463D49006D5AFB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -398,6 +410,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1A77C6AF2E2D158B00EB7DBF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
+		};
+		1ACC6E342E463D49006D5AFB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ACC6E332E463D49006D5AFB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

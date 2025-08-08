@@ -15,7 +15,7 @@ class WeatherForecastViewModel: ObservableObject {
         self.forecastService = forecastService
     }
     
-    func getCurrentForecastForecast(city: String) {
+    func getCurrentForecast(city: String) {
         isLoading = true
         errorMessage = nil
         
@@ -31,7 +31,7 @@ class WeatherForecastViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func load5DayForecast(city: String) {
+    func get5DayForecast(city: String) {
         isLoading = true
         errorMessage = nil
         

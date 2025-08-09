@@ -3,7 +3,7 @@ import MapboxMaps
 import CoreLocation
 
 final class LocationManager: NSObject, ObservableObject {
-    @Published var location: Location = Location(coordinate: CLLocationCoordinate2D(latitude: 50.27, longitude: 30.31))
+    @Published var location: Location?
     @Published var heading: Heading = Heading(direction: 0, accuracy: 0)
     @Published var cityName: String = "Unknown"
     
